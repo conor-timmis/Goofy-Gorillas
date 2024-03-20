@@ -110,7 +110,7 @@ body {
     }
 
     .above-text {
-        bottom: 10%;
+        bottom: 8%;
         font-size: 36px;
     }
 }
@@ -130,7 +130,7 @@ body {
     }
 
     .above-text {
-        bottom: 10%;
+        bottom: 8%;
         font-size: 48px;
     }
 }
@@ -150,7 +150,7 @@ body {
     }
 
     .above-text {
-        bottom: 6%;
+        bottom: 10%;
         font-size: 48px;
     }
 }
