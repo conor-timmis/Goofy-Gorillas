@@ -11,6 +11,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: "badaga";
+    color: white;
 }
 
 .logo img {
@@ -18,12 +19,30 @@ body {
     top: 2%;
     left: 50%;
     transform: translateX(-50%);
-    max-height: 150px;
+    max-height: 125px;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .social-icons img {
     max-height: 50px;
-    max-width: 50px;
+    margin: 0 15px;
+}
+
+.above-text {
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    right: 0;
+    text-align: center; /* Center the text */
 }
 
 .background-video {
