@@ -56,6 +56,24 @@ body {
     z-index: -99;
 }
 
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 65%;
+    height: 55%;
+}
 
 @media screen and (min-width: 576px) {
     .logo img {
@@ -103,7 +121,7 @@ body {
     }
 
     .social-icons {
-        bottom: 3%;
+        bottom: 2%;
     }
 
     .social-icons img {
@@ -112,7 +130,7 @@ body {
     }
 
     .above-text {
-        bottom: 12%;
+        bottom: 10%;
         font-size: 48px;
     }
 }
@@ -123,7 +141,7 @@ body {
     }
 
     .social-icons {
-        bottom: 4%;
+        bottom: 3%;
     }
 
     .social-icons img {
@@ -132,7 +150,7 @@ body {
     }
 
     .above-text {
-        bottom: 14%;
+        bottom: 6%;
         font-size: 48px;
     }
 }
@@ -143,16 +161,17 @@ body {
     }
 
     .social-icons {
-        bottom: 5%;
+        bottom: 1%;
     }
 
     .social-icons img {
         max-height: 130px;
-        margin: 0 40px;
+        margin: 0 30px;
+        bottom: 4px;
     }
 
     .above-text {
-        bottom: 16%;
+        bottom: 8%;
         font-size: 60px;
     }
 }
