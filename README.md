@@ -6,11 +6,11 @@ This repository only hosts the website files and serves as the central hub for G
 
 This website was built by myself to support my friend [Liam Bradbury](https://www.instagram.com/liambradbury) building the game completely alone, with playtests being hosted in-house along with our friends to help find bugs and play around.
 
-If you encounter any issues with the website or have suggestions for improvement, please submit a [new issue](https://github.com/your-username/goofy-gorillas/issues) on GitHub.
+If you encounter any issues with the website or have suggestions for improvement (only for the website), please submit a [new issue](https://github.com/your-username/goofy-gorillas/issues) on GitHub.
 
 Stay Connected with Goofy Gorillas below:
 
-- [Website](https://conor-timmis.github.io/Goofy-Gorillas/)
+- [Website](https://conor-timmis.github.io/Goofy-Gorillas/) (Live on Github Pages)
 - [Discord](https://discord.gg/egkr4xcc9A)
 - [Twitter/X](https://www.twitter.com/goofygorillasgg)
 - [Tiktok](https://www.tiktok.com/@goofygorillasgg)
