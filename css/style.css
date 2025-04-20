@@ -1,49 +1,40 @@
-html {
+html, body {
     margin: 0;
+    padding: 0;
     height: 100%;
-    overflow: hidden
+    font-family: "badaga", sans-serif;
+    color: white;
+    overflow-x: hidden;
 }
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: "badaga";
-    color: white;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+header, footer {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .logo img {
-    position: fixed;
-    top: 2%;
-    left: 50%;
-    transform: translateX(-50%);
     max-height: 125px;
+    margin-top: 5%;
+    transition: max-height 0.3s ease;
 }
 
-.social-icons {
-    position: absolute;
-    bottom: 1%;
-    left: 0;
-    right: 0;
+main {
+    flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-}
-
-.social-icons img {
-    max-height: 50px;
-    margin: 0 15px;
-}
-
-.above-text {
-    position: absolute;
-    bottom: 7%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 18px;
+    align-items: center;
+    width: 100%;
 }
 
 .background-video {
@@ -53,85 +44,87 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -99;
+    z-index: -1;
+}
+
+.social-media {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+    max-height: 50px;
+    margin: 10px;
+    transition: transform 0.3s ease, max-height 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(215, 129, 241, 0.7);
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.5) hue-rotate(270deg);
+    }
 }
 
 .video-container {
     position: relative;
-    width: 100%;
+    width: 90%;
     max-width: 900px;
-    height: 506px;
+    height: auto;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(215, 129, 241, 0.7);
+    border-radius: 10px;
 }
 
 .video-container iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: 506px;
     border: none;
+    border-radius: 10px;
 }
 
-@media screen and (min-width: 576px) {
-    .logo img {
-        max-height: 155px;
+@media screen and (max-width: 768px) {
+    .video-container iframe {
+        height: 300px;
     }
+}
 
-    .social-icons {
-        bottom: 1%;
-    }
-
+@media screen and (max-width: 576px) {
     .social-icons img {
-        min-height: 75px;
-        margin: 0 20px;
-    }
-
-    .above-text {
-        bottom: 10%;
-        font-size: 24px;
+        max-height: 40px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .logo img {
-        max-height: 170px;
-    }
-
-    .social-icons {
-        bottom: 2%;
+        max-height: 150px;
     }
 
     .social-icons img {
-        max-height: 85px;
-        margin: 0 25px;
-    }
-
-    .above-text {
-        bottom: 8%;
-        font-size: 36px;
+        max-height: 60px;
     }
 }
 
 @media screen and (min-width: 992px) {
     .logo img {
-        max-height: 185px;
-    }
-
-    .social-icons {
-        bottom: 2%;
+        max-height: 175px;
     }
 
     .social-icons img {
-        max-height: 100px;
-        margin: 0 30px;
-    }
-
-    .above-text {
-        bottom: 8%;
-        font-size: 48px;
+        max-height: 70px;
     }
 }
 
@@ -140,38 +133,31 @@ body {
         max-height: 200px;
     }
 
-    .social-icons {
-        bottom: 3%;
-    }
-
     .social-icons img {
-        max-height: 120px;
-        margin: 0 35px;
-    }
-
-    .above-text {
-        bottom: 10%;
-        font-size: 48px;
+        max-height: 80px;
     }
 }
 
-@media screen and (min-width: 1400px) {
-    .logo img {
-        max-height: 215px;
-    }
+.above-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: font-size 0.3s ease;
+}
 
-    .social-icons {
-        bottom: 1%;
-    }
-
-    .social-icons img {
-        max-height: 130px;
-        margin: 0 30px;
-        bottom: 4px;
-    }
-
+@media screen and (min-width: 768px) {
     .above-text {
-        bottom: 8%;
-        font-size: 60px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .above-text {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .above-text {
+        font-size: 32px;
     }
 }
